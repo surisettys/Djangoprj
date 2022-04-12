@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+
+{% block content %}
+{% for tag in tags %}
+<ul>
+<li>{{tag}}</li>
+<li><a href="myapp/detail/{{tag.id}}"> {{tag.name}} detail</a></li>
+</ul>
+
+
+
+{% endfor %}
+
+{% endblock %}
